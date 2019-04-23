@@ -3,9 +3,21 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
+    "blockstack": "^19.1.0",
+    "immutability-helper": "^3.0.0",
+    "immutable": "^4.0.0-rc.12",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "2.1.8"
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "2.1.8",
+    "react-slate": "^0.5.1",
+    "reactn": "^1.0.0",
+    "slate": "^0.45.0",
+    "slate-react": "^0.21.20",
+    "uport-connect": "^1.1.9",
+    "uport-credentials": "^1.1.7",
+    "uuidv4": "^4.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

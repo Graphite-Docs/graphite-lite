@@ -1,33 +1,180 @@
-.App {
+body { 
+  height: 100vh;
+}
+
+ul {
+  padding-left: 30px;
+}
+
+blockquote {
+  padding-left: 15px;
+  border-left: 3px solid #eee;
+  font-size: 22px;
+}
+
+li { 
+  list-style: disc;
+}
+.uport-sign-in {
+  background: #6acad1!important;
+  color: #fff!important;
+  margin-top: 25px;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.primary-background {
+  background: #827cff;
+}
+
+.primary-color {
+  color: #827cff;
+}
+
+.secondary-background {
+  background: #6acad1;
+}
+
+.secondary-color {
+  color: #6acad1;
+}
+
+.padding-max {
+  padding: 200px 100px;
+}
+
+h1 {
+  font-size: 36px!important;
+}
+
+h2 {
+  font-size: 30px!important;
+}
+
+h3 {
+  font-size: 24px!important;
+}
+
+.responsive-img {
+  max-width: 50%;
+  margin: auto;
+}
+
+.margin-top-100 {
+  margin-top: 100px;
+}
+
+.margin-top-45 {
+  margin-top: 45px;
+}
+
+.center {
   text-align: center;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+.margin-top-65 {
+  margin-top: 65px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.margin-top-200 {
+  margin-top: 200px;
 }
 
-.App-link {
-  color: #61dafb;
+.margin-bottom-25 {
+  margin-bottom: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.margin-top-25 {
+  margin-top: 25px;
+}
+
+.margin-left-10 {
+  margin-left: 10px;
+}
+
+.doc-button {
+  background: #827cff!important;
+  color: #fff;
+}
+
+.delete-button {
+  border: none!important;
+}
+
+.delete-button .fa-trash-alt {
+  color: red!important;
+}
+
+.button-link {
+  background: none!important;
+  border: none!important;
+  font-size: inherit!important;
+}
+
+.editor-container {
+  max-width: 70%;
+  margin: auto;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background: #93D9D8;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+.clouds{
+  background-image: url('http://jessicamichele.com/wp-content/uploads/2019/04/cloudy.svg');
+  background-position: 0px 0px;
+	background-repeat: repeat-x;
+height:98px;  
+  animation: moving 50s linear infinite;
+}
+.airplane{
+  position: absolute;
+  width:100px;
+  right:50%;
+  top:50%;
+  animation: up 2s ease-in-out infinite alternate, rotate 4s ease-out infinite;
+}
+.trees{
+  position:absolute;
+  background-image: url('http://jessicamichele.com/wp-content/uploads/2019/04/atree.svg');
+  background-position: 0px 0px;
+	background-repeat: repeat-x;
+  height:124px;
+  width:100%;
+  bottom:0;
+  animation: moving 30s linear infinite;
+}
+
+.cls-1, .cls-2 {
+  fill: #fff;
+}
+
+.cls-1 {
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+@keyframes moving{
+  to{
+    background-position: -110% 0;
   }
-  to {
-    transform: rotate(360deg);
+}
+@keyframes up{
+  to{
+    margin-top:-100px;
+  }
+}
+@keyframes rotate{
+  50%{
+    transform: rotate(-15deg);
+  }
+  75%{
+    transform: rotate(20deg);
   }
 }
