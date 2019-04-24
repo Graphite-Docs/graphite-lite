@@ -1,6 +1,5 @@
 import React, { Component } from 'reactn';
 import { Editor } from 'slate-react'
-import { Value } from 'slate'
 const single = require('../../helpers/docs/singleDoc');
 
 class SlateEditor extends Component {

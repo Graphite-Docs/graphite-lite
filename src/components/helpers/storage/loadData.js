@@ -12,13 +12,18 @@ export async function loadIPFS() {
     const fetch = await fetchFile(object);
     const privKey = JSON.parse(localStorage.getItem("graphite_keys")).GraphiteKeyPair.private;
     console.log(privKey);
-    const decryptedContent =
+    try {
+        const decryptedContent =
         decryptContent(fetch.data.content, {
           privateKey: privKey
         });
-    if(decryptedContent) {
+        console.log(decryptedContent);
+        if(decryptedContent) {
         setGlobal({ docs: JSON.parse(decryptedContent), loading: false });
-    } else {
-        setGlobal({ docs: [] });
+        } else {
+         setGlobal({ docs: [], loading: false });
+         }
+    } catch(error) {
+        setGlobal({ docs: [], loading: false });
     }
 }

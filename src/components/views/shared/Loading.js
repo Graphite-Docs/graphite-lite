@@ -23,7 +23,7 @@ class Loading extends Component {
                 </g>
             </g>
             </svg>
-            <p style={{marginLeft: "25px", marginTop: "25px"}}>Created by <a href="https://codepen.io/RebelJess/#" target="_blank">Jess</a></p>
+            <p style={{marginLeft: "25px", marginTop: "25px"}}>Created by <a href="https://codepen.io/RebelJess/#" target="_blank" rel="noopener noreferrer">Jess</a></p>
             <div className="trees"></div>
         </div>
       );

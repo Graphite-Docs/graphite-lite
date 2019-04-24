@@ -32,8 +32,8 @@ export async function makeProfile(profile) {
           // Start the IPFS process here.
           if(profile.create) {
             localStorage.setItem('profileFound', JSON.stringify(true));
+            localStorage.setItem('storageProvider', "ipfs");
             postToIPFS(profile);
-            localStorage.setItem('profileFound', JSON.stringify(true))
             return true;
           }
         }
